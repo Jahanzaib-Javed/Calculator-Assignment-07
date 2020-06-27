@@ -1,24 +1,29 @@
-.main {
-    border: 2px solid grey;
-    width: 300px;
+.con {
+    /* border: 2px solid black; */
+    width: 50%;
     margin: 0 auto;
 }
-.result {
-    width: 97%;
-    background-color: grey;
-}
-.clr {
-    width: 100%;
-    margin-top: 10px;
-    background-color: lightblue;
+.screen {
+    width: 99%;
+    height: 100px;
+    font-size: 55px;
+    background-color: #EAEDED;
+    color: #2C3E50;
 }
 .btn {
-    width: 23%;
+    width: 24.25%;
+    height: 75px;
+    font-size: 55px ;
     margin: 1px;
-    background-color: lightblue;
+    background-color: #2C3E50;
+    color: white ;
 }
-.btn-h {
-    width: 48%;
-    margin: 1px;
-    background-color: lightblue;
+.btn:hover{
+    background-color: #808B96;
+}
+.e {
+    background-color: #2874A6;
+}
+.e:hover{
+    background-color: #3498DB;
 }

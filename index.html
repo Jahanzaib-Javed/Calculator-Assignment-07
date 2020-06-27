@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <div class="main">
-         <div>
-             <input id="res" class="result" type="text">
-         </div>
-         <div>
-             <button class="clr" onclick="clearresult()" >C</button>
-         </div>
-         <div>
+    <div class="con">
+        <div>
+            <input id="res" class="screen" type="text">
+        </div>
+        <div>
+            <button class="btn" onclick="clearresult()">C</button>
+            <button class="btn" onclick="getnumber('(')">(</button>
+            <button class="btn" onclick="getnumber(')')">)</button>
+            <button class="btn" onclick="getnumber('/')">&#xf7</button>
+        </div>
+        <div>
             <button class="btn" onclick="getnumber('7')">7</button>
             <button class="btn" onclick="getnumber('8')">8</button>
             <button class="btn" onclick="getnumber('9')">9</button>
@@ -33,11 +38,13 @@
             <button class="btn" onclick="getnumber('+')">+</button>
         </div>
         <div>
-            <button class="btn-h" onclick="getnumber('0')">0</button>
-            <button class="btn-h" onclick="getresult()">=</button>
-         </div>
-     </div>
-
+            <button class="btn" onclick="getnumber('.')">.</button>
+            <button class="btn" onclick="getnumber('0')">0</button>
+            <button class="btn" onclick="getnumber('%')">%</button>
+            <button class="btn e" onclick="getresult()">=</button>
+        </div>
+    </div>
 </body>
 <script src="app.js"></script>
+
 </html>
